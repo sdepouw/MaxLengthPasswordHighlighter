@@ -4,11 +4,19 @@
 			return;
 		}
 		for (let i = 0; i < passwordFields.length; i++) {
-			if (!passwordFields[i].hasAttribute('maxlength')) {
+			if (!containsValidMaxLengthAttribute(passwordFields[i])) {
 				continue;
 			}
 			addWarning(passwordFields[i]);
 		}
+	}
+	
+	function containsValidMaxLengthAttribute(field) {
+		if (!field || !field.hasAttribute('maxlength')) {
+			return false;
+		}
+		const maxLength = field.getAttribute('maxlength');
+		return maxLength && !isNaN(maxLength);
 	}
 	
 	function addWarning(field) {
@@ -30,5 +38,5 @@
 			'</div>';
 	}
 	
-	checkForMaxLengths(doc.querySelectorAll("input[type=password]"));
+	checkForMaxLengths(doc.querySelectorAll('input[type=password]'));
 })(window.document);

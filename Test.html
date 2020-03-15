@@ -16,6 +16,22 @@
 			<label for="passwd2">Example Password 2 (Max 10)</label>
 			<input type="password" id="passwd2" class="form-control" maxlength="10">
 		</div>
+		<div class="form-row">
+			<label for="passwd3">Example Password 3 (Empty Max)</label>
+			<input type="password" id="passwd3" class="form-control" maxlength="">
+		</div>
+		<div class="form-row">
+			<label for="passwd4">Example Password 4 (Invalid Max ('foo'))</label>
+			<input type="password" id="passwd4" class="form-control" maxlength="foo">
+		</div>
+		<div class="form-row">
+			<label for="passwd5">Example Password 5 (MaXLeNgTh 25)</label>
+			<input type="password" id="passwd5" class="form-control" MaXLeNgTh="25">
+		</div>
+		<div class="form-row">
+			<label for="text1">Example Field (maxlength but not a password)</label>
+			<input type="text" id="text1" class="form-control" maxlength="50">
+		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
