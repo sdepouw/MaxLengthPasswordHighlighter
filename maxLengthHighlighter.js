@@ -1,4 +1,6 @@
 (function(doc) {
+	'use strict';
+	
 	function checkForMaxLengths(passwordFields) {
 		if (!passwordFields) {
 			return;
