@@ -1,4 +1,7 @@
-# Max Length Password Highlighter
+# Max Length Password Highlighter: A Firefox Add-on
+
+### [Now Available](https://addons.mozilla.org/en-US/firefox/addon/password-maxlength-highlighter/)
+
 This is a very simple Firefox Add-on that scans the current page for any `<input type="password">` tags, to check and see if they have a `maxlength` attribute. If so, it highlights the input and provides a warning. This comes in handy if you are using a password manager and are pasting/auto-typing the password into the field, and are given no indication when your password is being truncated.
 
 ![Example](https://user-images.githubusercontent.com/4809334/76706285-aff25300-66bc-11ea-821d-feb09de33a64.png)
