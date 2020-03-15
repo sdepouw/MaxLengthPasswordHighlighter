@@ -1,14 +1,14 @@
 input.warn-max {
-	border: 1px dashed crimson;
+    border: 1px dashed crimson;
 }
 
 div.warn-max {
-	font-size: small;
-	font-weight: bold;
-	color: crimson;
+    font-size: small;
+    font-weight: bold;
+    color: crimson;
 }
 
 div.warn-max span {
-	font-size: initial;
-	text-transform: uppercase;
+    font-size: initial;
+    text-transform: uppercase;
 }
