@@ -9,7 +9,7 @@
     {
 	  "matches": ["<all_urls>"],
 	  "css": ["maxLengthHighlighter.css"],
-      "js": ["maxLengthHighlighter.js"]
+      "js": ["sanitizer.js", "maxLengthHighlighter.js"]
     }
   ]
 }

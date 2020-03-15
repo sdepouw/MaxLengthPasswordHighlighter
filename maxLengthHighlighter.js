@@ -1,5 +1,5 @@
-(function(doc) {
-	'use strict';
+(function(doc, sanitizer) {
+	// 'use strict';
 	
 	function checkForMaxLengths(passwordFields) {
 		if (!passwordFields) {
@@ -32,13 +32,11 @@
 	}
 	
 	function getWarningHTML(warningCSSClass, maxLength) {
-		return '<div class="' + warningCSSClass + '">' +
-			'<span>Warning:</span> ' + 
-			'This password field has a maximum length of ' + 
-			'<span>' + maxLength + '</span> ' +
-			'characters!' +
-			'</div>';
+		return sanitizer.escapeHTML
+`<div class="${warningCSSClass}">
+	<span>Warning:</span> This password field has a maximum length of <span>${maxLength}</span> characters!
+</div>`;
 	}
 	
 	checkForMaxLengths(doc.querySelectorAll('input[type=password]'));
-})(window.document);
+})(window.document, Sanitizer);
